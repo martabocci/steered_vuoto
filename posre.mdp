@@ -20,9 +20,9 @@ constraints              = all-bonds
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;, part to be updated by users
 
 
-integrator               = steep           
-dt                       = 0.002
-nsteps                   = -1            
+integrator               = md          
+dt                       = 0.001
+nsteps                   = 20000         
 
 ;;;;;;;;;; minimization
 
@@ -31,18 +31,27 @@ emstep                   = 0.01
 
 
 ;;;;;;;;;;;; OUTPUT CONTROL OPTIONS
-nstxout                  = 100
-nstvout                  = 100
-nstlog                   = 1000
-nstcalcenergy            = 100
-nstenergy                = 1000
+nstxout                  = 5
+nstvout                  = 5
+nstlog                   = 5
+nstcalcenergy            = 5
+nstenergy                = 5
 energygrps               = 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;, Temperature coupling  
-tcoupl                   = No
+tcoupl                   = v-rescale
 tc-grps                  = system
 tau-t                    = 0.1 
 ref-t                    = 300 
+
+Pcoupl                   = berendsen
+Pcoupltype               = isotropic
+nstpcouple               = -1
+tau_p                    = 1.0
+compressibility          = 4.5e-5
+ref_p                    = 1.0
+refcoord_scaling         = com
+
 
 
 ; SIMULATED ANNEALING  
@@ -56,7 +65,7 @@ annealing-time           =                 ; es. 50 100 150 50 100 150
 annealing-temp           =                 ; es. 300 400 500 300 400 500
 
 ; GENERATE VELOCITIES FOR STARTUP RUN
-gen-vel                  = no. ; or yes
+gen-vel                  = no
 gen-temp                 = 300
 gen-seed                 = -1
 
