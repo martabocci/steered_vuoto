@@ -20,7 +20,7 @@ constraints              = all-bonds
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;, part to be updated by users
 
 
-integrator               = steep    ; md          
+integrator               = steep           
 dt                       = 0.002
 nsteps                   = -1            
 
@@ -40,9 +40,9 @@ energygrps               =
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;, Temperature coupling  
 tcoupl                   = No
-tc-grps                  = Water non-water
-tau-t                    = 0.1 0.1
-ref-t                    = 300 300
+tc-grps                  = system
+tau-t                    = 0.1 
+ref-t                    = 300 
 
 
 ; SIMULATED ANNEALING  
