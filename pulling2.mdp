@@ -19,9 +19,9 @@ rvdw                     = 1
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;, part to be updated by users
 
 
-integrator               = steep              
+integrator               = md          
 dt                       = 0.002
-nsteps                   = -1            
+nsteps                   = 10000           
 
 ;;;;;;;;;; minimization
 
@@ -30,18 +30,18 @@ emstep                   = 0.01
 
 
 ;;;;;;;;;;;; OUTPUT CONTROL OPTIONS
-nstxout                  = 100
-nstvout                  = 100
-nstlog                   = 1000
-nstcalcenergy            = 100
-nstenergy                = 1000
+nstxout                  = 5000
+nstvout                  = 5000
+nstlog                   = 500
+nstcalcenergy            = 500
+nstenergy                = 500
 energygrps               = 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;, Temperature coupling  
-tcoupl                   = v-rescale
-tc-grps                  = Water non-water
-tau-t                    = 0.1 0.1
-ref-t                    = 300 300
+tcoupl                   = 
+tc-grps                  = system
+tau-t                    = 0.1 
+ref-t                    = 300 
 
 
 ; SIMULATED ANNEALING  
@@ -78,5 +78,5 @@ pull_coord1_geometry    = distance  ; simple distance increase
 pull_coord1_dim         = Y N N     ; pull along x
 pull_coord1_groups      = 1 2       ; groups 1 (pull) and 2 (ref) define the reaction coordinate
 pull_coord1_start       = yes       ; define initial COM distance > 0
-pull_coord1_rate        = 0.05       ; 0.01 nm per ps = 10 nm per ns
+pull_coord1_rate        = 1       ; 0.01 nm per ps = 10 nm per ns
 pull_coord1_k           = 1000      ; kJ mol^-1 nm^-2
