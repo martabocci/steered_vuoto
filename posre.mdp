@@ -1,6 +1,6 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; never touch this part
-define                   = -DPOSRES
+define                   = 
 comm-mode                = ANGULAR           ;
 nstcomm                  = 100
 cutoff-scheme            = Verlet
