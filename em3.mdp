@@ -19,9 +19,9 @@ constraints              = all-bonds
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;, part to be updated by users
 
 
-integrator               = steep             
+integrator               = steep
 dt                       = 0.002
-nsteps                   = 50000    
+nsteps                   = 50000
 
 ;;;;;;;;;; minimization
 
@@ -43,6 +43,7 @@ tc-grps                  = system
 tau-t                    = 0.1 
 ref-t                    = 10
 
+P
 
 ; SIMULATED ANNEALING  
 ; Type of annealing for each temperature group (no/single/periodic)
@@ -55,6 +56,6 @@ annealing-time           =                 ; es. 50 100 150 50 100 150
 annealing-temp           =                 ; es. 300 400 500 300 400 500
 
 ; GENERATE VELOCITIES FOR STARTUP RUN
-gen-vel                  = no ;yes
+gen-vel                  = no 
 gen-temp                 = 10
 gen-seed                 = -1
