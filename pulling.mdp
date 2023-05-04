@@ -39,9 +39,9 @@ energygrps               =
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;, Temperature coupling  
 tcoupl                   = v-rescale
-tc-grps                  = Water non-water
-tau-t                    = 0.1 0.1
-ref-t                    = 300 300
+tc-grps                  = system
+tau-t                    = 0.1 
+ref-t                    = 500
 
 
 ; SIMULATED ANNEALING  
@@ -56,7 +56,7 @@ annealing-temp           =
 
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen-vel                  = yes
-gen-temp                 = 300
+gen-temp                 = 500
 gen-seed                 = -1
 
 
@@ -78,5 +78,5 @@ pull_coord1_geometry    = distance  ; simple distance increase
 pull_coord1_dim         = Y N N     ; pull along x
 pull_coord1_groups      = 1 2       ; groups 1 (pull) and 2 (ref) define the reaction coordinate
 pull_coord1_start       = yes       ; define initial COM distance > 0
-pull_coord1_rate        = 0.05       ; 0.01 nm per ps = 10 nm per ns
+pull_coord1_rate        = 0.01     ; 0.01 nm per ps = 10 nm per ns
 pull_coord1_k           = 1000      ; kJ mol^-1 nm^-2
