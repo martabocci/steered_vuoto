@@ -21,11 +21,11 @@ constraints              = all-bonds
 
 integrator               = steep
 dt                       = 0.002
-nsteps                   = 50000
+nsteps                   = -1
 
 ;;;;;;;;;; minimization
 
-emtol                    = 1000
+emtol                    = 10
 emstep                   = 0.01
 
 
