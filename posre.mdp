@@ -1,6 +1,6 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; never touch this part
-define                   = 
+define                   = -DPOSRES
 comm-mode                = ANGULAR           ;
 nstcomm                  = 100
 cutoff-scheme            = Verlet
@@ -51,7 +51,7 @@ tau_p                    = 1.0
 compressibility          = 4.5e-5
 ref_p                    = 1.0
 refcoord_scaling         = com
-
+nstpcouple               =-1
 
 
 ; SIMULATED ANNEALING  
