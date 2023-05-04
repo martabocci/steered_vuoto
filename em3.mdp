@@ -43,7 +43,7 @@ tc-grps                  = system
 tau-t                    = 0.1 
 ref-t                    = 10
 
-P
+
 
 ; SIMULATED ANNEALING  
 ; Type of annealing for each temperature group (no/single/periodic)
