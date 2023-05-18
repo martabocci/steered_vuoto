@@ -21,7 +21,7 @@ rvdw                     = 1
 
 integrator               = steep              
 dt                       = 0.002
-nsteps                   = -1            
+nsteps                   = 1000000       
 
 ;;;;;;;;;; minimization
 
