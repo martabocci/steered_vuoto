@@ -19,7 +19,7 @@ rvdw                     = 1
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;, part to be updated by users
 
 
-integrator               = steep              
+integrator               = md          
 dt                       = 0.002
 nsteps                   = 1000000       
 
@@ -30,18 +30,18 @@ emstep                   = 0.01
 
 
 ;;;;;;;;;;;; OUTPUT CONTROL OPTIONS
-nstxout                  = 100
-nstvout                  = 100
-nstlog                   = 1000
-nstcalcenergy            = 100
-nstenergy                = 1000
+nstxout                  = 5000
+nstvout                  = 5000
+nstlog                   = 500
+nstcalcenergy            = 500
+nstenergy                = 500
 energygrps               = 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;, Temperature coupling  
-tcoupl                   = v-rescale
+tcoupl                   = 
 tc-grps                  = system
 tau-t                    = 0.1 
-ref-t                    = 500
+ref-t                    = 300
 
 
 ; SIMULATED ANNEALING  
