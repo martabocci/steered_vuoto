@@ -21,7 +21,7 @@ rvdw                     = 1
 
 integrator               = md             
 dt                       = 0.002
-nsteps                   = 100000       
+nsteps                   = 1000000      
 
 ;;;;;;;;;; minimization
 
@@ -56,7 +56,7 @@ annealing-temp           =
 
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen-vel                  = yes
-gen-temp                 = 300
+gen-temp                 = 500
 gen-seed                 = -1
 
 
